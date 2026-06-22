@@ -1,0 +1,16 @@
+feature,mean_abs_shap
+runway_months_latest,0.1249808443800531
+consecutive_low_runway_months,0.0973274049528097
+composite_risk_index,0.0885238918875774
+runway_months_pct_change_6m,0.0440742063494049
+capital_efficiency,0.0280028848903754
+runway_months_slope_3m,0.0200271633854878
+mrr_latest,0.0131023307623033
+burn_multiple,0.0120201285478394
+runway_months_slope_6m,0.0105735527493979
+cash_on_hand_latest,0.0100241840215434
+mrr_slope_6m,0.0086008066625944
+burn_rate_latest,0.0077833351525955
+company_age_months_at_t,0.0076067605255295
+mrr_slope_3m,0.0062111861740302
+initial_capital,0.0053225247259911
