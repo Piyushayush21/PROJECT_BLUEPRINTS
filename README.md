@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🛰️ SFEWS — Startup Failure Early Warning System
 
 A 6-month-ahead startup failure prediction system trained on a simulated
@@ -138,3 +139,22 @@ Power BI (DAX) · pytest · GitHub Actions
 ## License
 
 MIT — see [LICENSE](LICENSE).
+=======
+# lab-flask
+
+<!-- ![image](https://user-images.githubusercontent.com/115451707/196919992-edcfea8b-e3f6-4f35-9398-43be66b5622d.png) -->
+
+
+To run flask application 
+
+```
+python app.py
+```
+
+
+To access your flask application open new tab in and paste the url:
+```
+https://{your_url}.pwskills.app:5000/
+```
+# random_project-
+>>>>>>> 1bccd77c6a79985114a0f56f9af33380cf55ffac

@@ -1,0 +1,10 @@
+{
+  "workbench.colorTheme": "Dark+",
+  "workbench.preferredDarkColorTheme": "Dark+",
+  "task.allowAutomaticTasks": "on",
+  "workbench.editorAssociations": {
+    "*.md": "vscode.markdown.preview.editor",
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.pkl": "default"
+  }
+}
