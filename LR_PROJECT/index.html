@@ -1,132 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Diabetes Prediction AI</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+<title>Diabetes Risk Prediction System</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+
+    background:
+    radial-gradient(circle at top left,#4f46e5 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#06b6d4 0%,transparent 35%),
+    #0f172a;
+}
+
+.container{
+    width:100%;
+    max-width:800px;
+
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:28px;
+
+    padding:40px;
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,.4),
+    inset 0 0 30px rgba(255,255,255,.03);
+}
+
+.logo{
+    text-align:center;
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+h1{
+    text-align:center;
+    color:white;
+    font-size:2rem;
+    font-weight:700;
+}
+
+.subtitle{
+    text-align:center;
+    color:#94a3b8;
+    margin-top:8px;
+    margin-bottom:35px;
+}
+
+form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    color:#cbd5e1;
+    font-size:14px;
+    margin-bottom:6px;
+}
+
+input{
+    width:100%;
+    padding:14px 16px;
+
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,0.08);
+
+    background:rgba(255,255,255,0.06);
+
+    color:white;
+    outline:none;
+
+    transition:.3s;
+}
+
+input::placeholder{
+    color:#94a3b8;
+}
+
+input:focus{
+    border-color:#38bdf8;
+
+    box-shadow:
+    0 0 15px rgba(56,189,248,.35);
+
+    transform:translateY(-2px);
+}
+
+.predict-btn{
+    grid-column:span 2;
+
+    margin-top:10px;
+
+    padding:16px;
+
+    border:none;
+    border-radius:16px;
+
+    font-size:16px;
+    font-weight:600;
+
+    color:white;
+    cursor:pointer;
+
+    background:linear-gradient(
+    135deg,
+    #2563eb,
+    #06b6d4
+    );
+
+    transition:.3s;
+}
+
+.predict-btn:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 12px 30px rgba(37,99,235,.45);
+}
+
+.result{
+    margin-top:25px;
+
+    padding:18px;
+
+    text-align:center;
+
+    border-radius:16px;
+
+    color:white;
+
+    font-size:18px;
+    font-weight:700;
+
+    background:rgba(34,197,94,.12);
+
+    border:1px solid rgba(34,197,94,.25);
+}
+
+.footer-text{
+    text-align:center;
+    color:#64748b;
+    font-size:13px;
+    margin-top:25px;
+}
+
+@media(max-width:768px){
+
+    .container{
+        padding:25px;
     }
 
-    body {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, #1f1c2c, #928dab);
-      padding: 20px;
+    form{
+        grid-template-columns:1fr;
     }
 
-    .container {
-      width: 100%;
-      max-width: 450px;
-      background: rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(15px);
-      border-radius: 20px;
-      padding: 30px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-      border: 1px solid rgba(255,255,255,0.2);
+    .predict-btn{
+        grid-column:span 1;
     }
 
-    h1 {
-      text-align: center;
-      color: #fff;
-      margin-bottom: 25px;
-      font-size: 26px;
-      letter-spacing: 1px;
+    h1{
+        font-size:1.6rem;
     }
+}
 
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    input {
-      padding: 12px 15px;
-      border-radius: 10px;
-      border: none;
-      outline: none;
-      font-size: 14px;
-      background: rgba(255,255,255,0.15);
-      color: #fff;
-      transition: 0.3s;
-    }
-
-    input::placeholder {
-      color: rgba(255,255,255,0.7);
-    }
-
-    input:focus {
-      background: rgba(255,255,255,0.25);
-      transform: scale(1.02);
-    }
-
-    button {
-      margin-top: 10px;
-      padding: 12px;
-      border: none;
-      border-radius: 10px;
-      background: linear-gradient(90deg, #00c6ff, #0072ff);
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.3s ease;
-      font-weight: bold;
-    }
-
-    button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    }
-
-    .result {
-      margin-top: 20px;
-      text-align: center;
-      font-size: 18px;
-      color: #fff;
-      font-weight: bold;
-    }
-
-    .subtitle {
-      text-align: center;
-      color: rgba(255,255,255,0.7);
-      font-size: 13px;
-      margin-bottom: 15px;
-    }
-  </style>
+</style>
 </head>
 
 <body>
 
-  <div class="container">
-    <h1>🩺 Diabetes Prediction AI</h1>
-    <p class="subtitle">Enter patient details to predict risk</p>
+<div class="container">
 
-    <form action="{{ url_for('predict_datapoint')}}" method="post">
-      <input type="text" name="Pregnancies" placeholder="Pregnancies" required />
-      <input type="text" name="Glucose" placeholder="Glucose Level" required />
-      <input type="text" name="BloodPressure" placeholder="Blood Pressure" required />
-      <input type="text" name="SkinThickness" placeholder="Skin Thickness" required />
-      <input type="text" name="Insulin" placeholder="Insulin" required />
-      <input type="text" name="BMI" placeholder="BMI" required />
-      <input type="text" name="DiabetesPedigreeFunction" placeholder="Diabetes Pedigree Function" required />
-      <input type="text" name="Age" placeholder="Age" required />
+    <div class="logo">🩺</div>
 
-      <button type="submit">Predict Now</button>
+    <h1>Diabetes Risk Prediction System</h1>
+
+    <p class="subtitle">
+        AI Powered Healthcare Screening Tool
+    </p>
+
+    <form action="{{ url_for('predict_datapoint') }}" method="post">
+
+        <div class="input-group">
+            <label>Pregnancies</label>
+            <input type="number" name="Pregnancies" placeholder="Enter value" required>
+        </div>
+
+        <div class="input-group">
+            <label>Glucose Level</label>
+            <input type="number" name="Glucose" placeholder="Enter value" required>
+        </div>
+
+        <div class="input-group">
+            <label>Blood Pressure</label>
+            <input type="number" name="BloodPressure" placeholder="Enter value" required>
+        </div>
+
+        <div class="input-group">
+            <label>Skin Thickness</label>
+            <input type="number" name="SkinThickness" placeholder="Enter value" required>
+        </div>
+
+        <div class="input-group">
+            <label>Insulin</label>
+            <input type="number" name="Insulin" placeholder="Enter value" required>
+        </div>
+
+        <div class="input-group">
+            <label>BMI</label>
+            <input type="number" step="0.01" name="BMI" placeholder="Enter value" required>
+        </div>
+
+        <div class="input-group">
+            <label>Diabetes Pedigree Function</label>
+            <input type="number" step="0.01" name="DiabetesPedigreeFunction" placeholder="Enter value" required>
+        </div>
+
+        <div class="input-group">
+            <label>Age</label>
+            <input type="number" name="Age" placeholder="Enter value" required>
+        </div>
+
+        <button class="predict-btn" type="submit">
+            Predict Diabetes Risk
+        </button>
+
     </form>
 
     {% if result %}
     <div class="result">
-      Prediction: {{ result }}
+        Prediction Result: {{ result }}
     </div>
     {% endif %}
-  </div>
+
+    <div class="footer-text">
+        Powered by Machine Learning & Flask
+    </div>
+
+</div>
 
 </body>
 </html>
