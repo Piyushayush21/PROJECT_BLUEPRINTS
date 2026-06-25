@@ -9,7 +9,7 @@ by vinothkannaece.
 
 ---
 
-## ⚠️ Important note on data source (read this first)
+## Important note on data source (read this first)
 
 This dataset has **no direct download access** from inside the build environment used to
 create this project (no network route to kaggle.com). To make the project fully runnable,
