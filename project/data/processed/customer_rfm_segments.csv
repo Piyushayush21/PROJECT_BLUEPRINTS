@@ -1,0 +1,401 @@
+Customer_Name,Recency,Frequency,Monetary,R_Score,F_Score,M_Score,RFM_Score,RFM_Total,Segment,Recommended_Action
+Anita Anderson,1,141,17023400.0,5,4,3,543,12,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Anita Brown,3,156,19500100.0,4,4,4,444,12,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Anita Davis,20,101,12860500.0,1,1,2,112,4,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Anita Garcia,2,120,15105500.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Anita Gupta,1,126,15854200.0,5,3,3,533,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Anita Iyer,11,90,10835200.0,2,1,1,211,4,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Anita Johnson,3,122,14811100.0,4,2,2,422,8,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Anita Jones,3,91,11787800.0,4,1,1,411,6,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Anita Khan,1,114,15220200.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Anita Martinez,2,137,16414100.0,5,3,3,533,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Anita Miller,3,70,9379500.0,4,1,1,411,6,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Anita Nair,2,131,17028900.0,5,3,3,533,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Anita Patel,1,122,15208300.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Anita Rodriguez,2,161,19296900.0,5,5,4,554,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Anita Sharma,16,116,15762400.0,1,2,3,123,6,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Anita Smith,12,99,13543100.0,2,1,2,212,5,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Anita Taylor,4,119,15948700.0,4,2,3,423,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Anita Verma,10,73,10058500.0,2,1,1,211,4,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Anita Williams,3,126,14114600.0,4,3,2,432,9,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Anita Wilson,4,201,24538700.0,4,5,5,455,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Charles Anderson,3,108,13287000.0,4,2,2,422,8,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Charles Brown,22,121,14251400.0,1,2,2,122,5,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Charles Davis,29,124,14813300.0,1,3,2,132,6,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Charles Garcia,17,101,14504400.0,1,1,2,112,4,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Charles Gupta,10,125,16180100.0,2,3,3,233,8,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Charles Iyer,20,119,14634700.0,1,2,2,122,5,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Charles Johnson,11,148,18335800.0,2,4,4,244,10,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Charles Jones,4,160,20829300.0,4,5,5,455,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Charles Khan,17,90,10940900.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Charles Martinez,3,161,20750600.0,4,5,5,455,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Charles Miller,23,84,10212300.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Charles Nair,10,120,15473900.0,2,2,3,223,7,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Charles Patel,5,149,20309900.0,3,4,5,345,12,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Charles Rodriguez,15,97,12458000.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Charles Sharma,5,129,17357000.0,3,3,4,334,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Charles Smith,5,167,21447200.0,3,5,5,355,13,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Charles Taylor,1,87,10739700.0,5,1,1,511,7,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Charles Verma,1,120,15692400.0,5,2,3,523,10,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Charles Williams,2,176,21329900.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Charles Wilson,4,180,22586600.0,4,5,5,455,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Daniel Anderson,4,115,14225100.0,4,2,2,422,8,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Daniel Brown,5,176,23131600.0,3,5,5,355,13,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Daniel Davis,9,106,12319400.0,2,2,1,221,5,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Daniel Garcia,17,118,14771600.0,1,2,2,122,5,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Daniel Gupta,5,99,12392000.0,3,1,1,311,5,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Daniel Iyer,1,103,13635500.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Daniel Johnson,10,139,16833900.0,2,4,3,243,9,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Daniel Jones,2,171,21205000.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Daniel Khan,1,192,22664100.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Daniel Martinez,4,121,14909500.0,4,2,2,422,8,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Daniel Miller,1,157,20329000.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Daniel Nair,20,122,15858000.0,1,2,3,123,6,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Daniel Patel,2,114,13223500.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Daniel Rodriguez,4,123,15886600.0,4,3,3,433,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Daniel Sharma,7,136,18156900.0,3,3,4,334,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Daniel Smith,6,85,11579400.0,3,1,1,311,5,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Daniel Taylor,2,163,19921300.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Daniel Verma,22,85,11782200.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Daniel Williams,6,64,7328600.0,3,1,1,311,5,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Daniel Wilson,1,123,14800600.0,5,3,2,532,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+David Anderson,10,111,14038400.0,2,2,2,222,6,Lost / Churned,Low-cost reactivation only; do not over-invest.
+David Brown,2,104,13708100.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+David Davis,6,122,15272200.0,3,3,2,332,8,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+David Garcia,1,125,14871000.0,5,3,2,532,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+David Gupta,8,131,15732300.0,2,3,3,233,8,Needs Attention,Re-engagement email/SMS with a moderate discount.
+David Iyer,2,153,18788700.0,5,4,4,544,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+David Johnson,1,130,16507600.0,5,3,3,533,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+David Jones,2,146,17558400.0,5,4,4,544,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+David Khan,2,152,18986500.0,5,4,4,544,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+David Martinez,2,134,16190900.0,5,3,3,533,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+David Miller,1,188,23536500.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+David Nair,13,121,15012600.0,1,2,2,122,5,Lost / Churned,Low-cost reactivation only; do not over-invest.
+David Patel,8,119,15405100.0,2,2,3,223,7,Needs Attention,Re-engagement email/SMS with a moderate discount.
+David Rodriguez,3,129,15815800.0,4,3,3,433,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+David Sharma,6,151,20341500.0,3,4,5,345,12,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+David Smith,2,172,21830500.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+David Taylor,11,110,14439200.0,2,2,2,222,6,Lost / Churned,Low-cost reactivation only; do not over-invest.
+David Verma,5,140,17724300.0,3,4,4,344,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+David Williams,15,96,12098900.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+David Wilson,18,85,11525700.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+James Anderson,17,143,18227200.0,1,4,4,144,9,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+James Brown,21,81,10112800.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+James Davis,8,156,18446200.0,2,4,4,244,10,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+James Garcia,5,90,11122400.0,3,1,1,311,5,Needs Attention,Re-engagement email/SMS with a moderate discount.
+James Gupta,22,165,21081900.0,1,5,5,155,11,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+James Iyer,16,79,9300500.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+James Johnson,2,113,14785400.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+James Jones,3,89,11210300.0,4,1,1,411,6,New / Promising,Onboard with a second-purchase incentive within 30 days.
+James Khan,12,119,16112800.0,2,2,3,223,7,Needs Attention,Re-engagement email/SMS with a moderate discount.
+James Martinez,5,158,19628300.0,3,5,4,354,12,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+James Miller,21,65,8200000.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+James Nair,8,109,12885400.0,2,2,2,222,6,Lost / Churned,Low-cost reactivation only; do not over-invest.
+James Patel,3,110,13232900.0,4,2,2,422,8,New / Promising,Onboard with a second-purchase incentive within 30 days.
+James Rodriguez,2,135,17094600.0,5,3,3,533,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+James Sharma,5,97,11699800.0,3,1,1,311,5,Needs Attention,Re-engagement email/SMS with a moderate discount.
+James Smith,9,159,19604400.0,2,5,4,254,11,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+James Taylor,4,79,10743600.0,4,1,1,411,6,New / Promising,Onboard with a second-purchase incentive within 30 days.
+James Verma,3,164,21497400.0,4,5,5,455,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+James Williams,14,107,12802700.0,1,2,2,122,5,Lost / Churned,Low-cost reactivation only; do not over-invest.
+James Wilson,38,73,9029400.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Jennifer Anderson,4,183,21878500.0,4,5,5,455,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Jennifer Brown,4,142,17605000.0,4,4,4,444,12,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Jennifer Davis,2,181,23205200.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Jennifer Garcia,3,145,16897700.0,4,4,3,443,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Jennifer Gupta,11,145,19290000.0,2,4,4,244,10,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Jennifer Iyer,8,114,14666800.0,2,2,2,222,6,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Jennifer Johnson,4,111,14198600.0,4,2,2,422,8,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Jennifer Jones,10,71,8489900.0,2,1,1,211,4,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Jennifer Khan,5,146,18920400.0,3,4,4,344,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Jennifer Martinez,6,136,17966300.0,3,3,4,334,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Jennifer Miller,6,92,11060700.0,3,1,1,311,5,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Jennifer Nair,2,144,18028000.0,5,4,4,544,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Jennifer Patel,13,100,11703100.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Jennifer Rodriguez,3,139,17502900.0,4,4,4,444,12,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Jennifer Sharma,7,134,16909800.0,3,3,3,333,9,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Jennifer Smith,17,117,14735900.0,1,2,2,122,5,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Jennifer Taylor,12,104,12393800.0,2,2,1,221,5,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Jennifer Verma,4,141,17624300.0,4,4,4,444,12,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Jennifer Williams,3,79,10734700.0,4,1,1,411,6,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Jennifer Wilson,8,108,13790600.0,2,2,2,222,6,Lost / Churned,Low-cost reactivation only; do not over-invest.
+John Anderson,9,162,20070300.0,2,5,5,255,12,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+John Brown,2,118,14668000.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+John Davis,3,103,12791100.0,4,2,2,422,8,New / Promising,Onboard with a second-purchase incentive within 30 days.
+John Garcia,5,95,11278400.0,3,1,1,311,5,Needs Attention,Re-engagement email/SMS with a moderate discount.
+John Gupta,1,123,16506200.0,5,3,3,533,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+John Iyer,1,130,16010300.0,5,3,3,533,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+John Johnson,5,151,20029100.0,3,4,5,345,12,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+John Jones,9,106,14209300.0,2,2,2,222,6,Lost / Churned,Low-cost reactivation only; do not over-invest.
+John Khan,17,68,8573500.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+John Martinez,1,115,14237800.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+John Miller,3,128,15790100.0,4,3,3,433,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+John Nair,2,95,11895300.0,5,1,1,511,7,New / Promising,Onboard with a second-purchase incentive within 30 days.
+John Patel,16,67,7576900.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+John Rodriguez,3,144,17528800.0,4,4,4,444,12,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+John Sharma,7,132,15601500.0,3,3,3,333,9,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+John Smith,4,186,24162400.0,4,5,5,455,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+John Taylor,10,238,29617700.0,2,5,5,255,12,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+John Verma,7,123,15926900.0,3,3,3,333,9,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+John Williams,16,151,19189500.0,1,4,4,144,9,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+John Wilson,2,145,20065900.0,5,4,5,545,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Karen Anderson,2,158,19754900.0,5,5,4,554,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Karen Brown,6,91,11788800.0,3,1,1,311,5,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Karen Davis,26,157,19680600.0,1,5,4,154,10,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Karen Garcia,25,134,16506400.0,1,3,3,133,7,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Karen Gupta,15,159,19502300.0,1,5,4,154,10,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Karen Iyer,8,147,19466300.0,2,4,4,244,10,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Karen Johnson,18,108,14928700.0,1,2,2,122,5,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Karen Jones,9,70,9854200.0,2,1,1,211,4,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Karen Khan,3,91,11757600.0,4,1,1,411,6,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Karen Martinez,6,152,19806500.0,3,4,5,345,12,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Karen Miller,11,139,16018200.0,2,4,3,243,9,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Karen Nair,1,157,20282700.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Karen Patel,15,130,15947300.0,1,3,3,133,7,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Karen Rodriguez,8,133,16742000.0,2,3,3,233,8,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Karen Sharma,6,124,16429900.0,3,3,3,333,9,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Karen Smith,8,115,12982800.0,2,2,2,222,6,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Karen Taylor,8,76,9393600.0,2,1,1,211,4,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Karen Verma,7,126,16833200.0,3,3,3,333,9,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Karen Williams,7,73,8429000.0,3,1,1,311,5,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Karen Wilson,4,124,17146400.0,4,3,4,434,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Linda Anderson,23,144,19281600.0,1,4,4,144,9,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Linda Brown,1,165,19972600.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Linda Davis,9,150,18260300.0,2,4,4,244,10,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Linda Garcia,7,112,14539300.0,3,2,2,322,7,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Linda Gupta,1,138,16905600.0,5,3,3,533,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Linda Iyer,7,108,12433800.0,3,2,1,321,6,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Linda Johnson,2,171,21521600.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Linda Jones,3,164,20271200.0,4,5,5,455,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Linda Khan,6,155,17333000.0,3,4,4,344,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Linda Martinez,5,152,19807600.0,3,4,5,345,12,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Linda Miller,10,165,20933400.0,2,5,5,255,12,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Linda Nair,18,124,15256800.0,1,3,2,132,6,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Linda Patel,12,157,19843000.0,2,5,5,255,12,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Linda Rodriguez,11,192,23069700.0,2,5,5,255,12,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Linda Sharma,16,69,8687600.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Linda Smith,15,136,16424500.0,1,3,3,133,7,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Linda Taylor,8,98,11760100.0,2,1,1,211,4,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Linda Verma,4,124,16328900.0,4,3,3,433,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Linda Williams,6,128,16206200.0,3,3,3,333,9,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Linda Wilson,8,92,11967700.0,2,1,1,211,4,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Lisa Anderson,2,148,18195000.0,5,4,4,544,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Lisa Brown,11,232,29924500.0,2,5,5,255,12,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Lisa Davis,1,153,18845500.0,5,4,4,544,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Lisa Garcia,12,141,17543800.0,2,4,4,244,10,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Lisa Gupta,8,139,17116600.0,2,4,3,243,9,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Lisa Iyer,12,119,14034200.0,2,2,2,222,6,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Lisa Johnson,5,88,11026200.0,3,1,1,311,5,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Lisa Jones,2,127,15934400.0,5,3,3,533,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Lisa Khan,10,65,8959400.0,2,1,1,211,4,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Lisa Martinez,1,111,13966500.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Lisa Miller,22,110,14017400.0,1,2,2,122,5,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Lisa Nair,1,136,16811400.0,5,3,3,533,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Lisa Patel,11,120,14400400.0,2,2,2,222,6,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Lisa Rodriguez,1,169,21015100.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Lisa Sharma,3,113,14234800.0,4,2,2,422,8,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Lisa Smith,1,173,23161800.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Lisa Taylor,4,121,15939300.0,4,2,3,423,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Lisa Verma,9,104,14734300.0,2,2,2,222,6,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Lisa Williams,9,166,20662700.0,2,5,5,255,12,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Lisa Wilson,10,150,19155500.0,2,4,4,244,10,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Mary Anderson,16,142,17170400.0,1,4,4,144,9,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Mary Brown,6,106,13144700.0,3,2,2,322,7,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Mary Davis,3,205,27089500.0,4,5,5,455,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Mary Garcia,13,89,11793800.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Mary Gupta,6,160,20488400.0,3,5,5,355,13,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Mary Iyer,1,192,24283900.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Mary Johnson,22,139,18634200.0,1,4,4,144,9,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Mary Jones,4,139,16722800.0,4,4,3,443,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Mary Khan,2,174,20466200.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Mary Martinez,12,97,11925500.0,2,1,1,211,4,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Mary Miller,1,157,20415100.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Mary Nair,8,112,13252800.0,2,2,2,222,6,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Mary Patel,2,93,11098200.0,5,1,1,511,7,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Mary Rodriguez,4,137,17047900.0,4,3,3,433,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Mary Sharma,8,89,10530300.0,2,1,1,211,4,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Mary Smith,4,168,21779900.0,4,5,5,455,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Mary Taylor,1,175,22557600.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Mary Verma,5,110,13170400.0,3,2,2,322,7,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Mary Williams,5,194,24304700.0,3,5,5,355,13,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Mary Wilson,13,128,15315800.0,1,3,2,132,6,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Michael Anderson,4,133,16551900.0,4,3,3,433,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Michael Brown,18,118,14781100.0,1,2,2,122,5,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Michael Davis,2,108,13953600.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Michael Garcia,1,149,18452200.0,5,4,4,544,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Michael Gupta,1,99,12991100.0,5,1,2,512,8,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Michael Iyer,2,156,18326100.0,5,4,4,544,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Michael Johnson,14,178,21597900.0,1,5,5,155,11,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Michael Jones,1,145,19461800.0,5,4,4,544,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Michael Khan,1,191,24159400.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Michael Martinez,3,130,16630500.0,4,3,3,433,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Michael Miller,1,140,18560600.0,5,4,4,544,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Michael Nair,1,148,19204200.0,5,4,4,544,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Michael Patel,1,112,14423100.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Michael Rodriguez,25,49,5854200.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Michael Sharma,3,121,15473900.0,4,2,3,423,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Michael Smith,1,184,22995900.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Michael Taylor,5,116,16758400.0,3,2,3,323,8,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Michael Verma,5,138,16934700.0,3,4,3,343,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Michael Williams,6,136,17951200.0,3,3,4,334,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Michael Wilson,2,190,22044600.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Patricia Anderson,1,145,17453400.0,5,4,4,544,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Patricia Brown,3,131,17142800.0,4,3,3,433,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Patricia Davis,12,151,19079900.0,2,4,4,244,10,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Patricia Garcia,3,60,7856600.0,4,1,1,411,6,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Patricia Gupta,9,75,9219000.0,2,1,1,211,4,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Patricia Iyer,2,155,19731800.0,5,4,4,544,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Patricia Johnson,4,149,19025400.0,4,4,4,444,12,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Patricia Jones,10,147,17263300.0,2,4,4,244,10,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Patricia Khan,3,176,23401200.0,4,5,5,455,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Patricia Martinez,1,140,17563000.0,5,4,4,544,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Patricia Miller,4,136,18159900.0,4,3,4,434,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Patricia Nair,3,129,15019100.0,4,3,2,432,9,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Patricia Patel,3,85,11614600.0,4,1,1,411,6,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Patricia Rodriguez,6,121,16581800.0,3,2,3,323,8,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Patricia Sharma,20,134,16362300.0,1,3,3,133,7,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Patricia Smith,4,161,19671700.0,4,5,4,454,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Patricia Taylor,3,128,17086700.0,4,3,3,433,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Patricia Verma,10,131,16182600.0,2,3,3,233,8,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Patricia Williams,1,129,16231000.0,5,3,3,533,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Patricia Wilson,2,114,14839600.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Priya Anderson,1,232,29428400.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Priya Brown,5,136,17368200.0,3,3,4,334,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Priya Davis,9,157,19364400.0,2,5,4,254,11,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Priya Garcia,1,138,16474600.0,5,4,3,543,12,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Priya Gupta,1,134,16424600.0,5,3,3,533,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Priya Iyer,9,105,12538200.0,2,2,2,222,6,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Priya Johnson,22,131,15768700.0,1,3,3,133,7,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Priya Jones,11,191,24440300.0,2,5,5,255,12,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Priya Khan,6,151,19310100.0,3,4,4,344,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Priya Martinez,24,123,16093600.0,1,3,3,133,7,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Priya Miller,18,67,9032700.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Priya Nair,5,157,20097800.0,3,5,5,355,13,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Priya Patel,1,148,19077700.0,5,4,4,544,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Priya Rodriguez,14,104,12889700.0,1,2,2,122,5,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Priya Sharma,1,149,19656000.0,5,4,4,544,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Priya Smith,5,140,17066800.0,3,4,3,343,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Priya Taylor,1,217,28168000.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Priya Verma,3,151,19258000.0,4,4,4,444,12,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Priya Williams,1,166,20670500.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Priya Wilson,26,138,18089200.0,1,4,4,144,9,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Ravi Anderson,1,28,3613400.0,5,1,1,511,7,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Ravi Brown,12,93,11900300.0,2,1,1,211,4,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Ravi Davis,2,105,12748800.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Ravi Garcia,3,135,17515100.0,4,3,4,434,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Ravi Gupta,10,77,8960800.0,2,1,1,211,4,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Ravi Iyer,11,151,18169500.0,2,4,4,244,10,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Ravi Johnson,12,118,13356900.0,2,2,2,222,6,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Ravi Jones,5,147,18890400.0,3,4,4,344,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Ravi Khan,5,147,17586400.0,3,4,4,344,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Ravi Martinez,2,114,14086500.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Ravi Miller,32,86,10513000.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Ravi Nair,12,169,21955400.0,2,5,5,255,12,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Ravi Patel,9,104,12182500.0,2,2,1,221,5,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Ravi Rodriguez,2,107,13393300.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Ravi Sharma,4,162,20185300.0,4,5,5,455,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Ravi Smith,23,101,11731800.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Ravi Taylor,22,94,11531400.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Ravi Verma,5,149,18391200.0,3,4,4,344,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Ravi Williams,6,102,12427500.0,3,2,1,321,6,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Ravi Wilson,2,150,19600100.0,5,4,4,544,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Robert Anderson,4,141,18041600.0,4,4,4,444,12,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Robert Brown,12,100,13018300.0,2,1,2,212,5,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Robert Davis,1,119,14811000.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Robert Garcia,2,135,16663900.0,5,3,3,533,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Robert Gupta,3,160,20571600.0,4,5,5,455,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Robert Iyer,2,125,13826400.0,5,3,2,532,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Robert Johnson,8,75,9085100.0,2,1,1,211,4,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Robert Jones,1,128,15666400.0,5,3,3,533,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Robert Khan,5,138,17065400.0,3,4,3,343,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Robert Martinez,1,117,15883800.0,5,2,3,523,10,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Robert Miller,13,72,9396200.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Robert Nair,12,123,14974400.0,2,3,2,232,7,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Robert Patel,7,85,10531000.0,3,1,1,311,5,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Robert Rodriguez,17,101,12183100.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Robert Sharma,11,93,11638300.0,2,1,1,211,4,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Robert Smith,1,140,15943300.0,5,4,3,543,12,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Robert Taylor,5,168,21454100.0,3,5,5,355,13,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Robert Verma,1,92,11514400.0,5,1,1,511,7,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Robert Williams,3,146,19836000.0,4,4,5,445,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Robert Wilson,5,126,16311800.0,3,3,3,333,9,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Sarah Anderson,4,123,15374900.0,4,3,2,432,9,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Sarah Brown,4,150,19137300.0,4,4,4,444,12,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Sarah Davis,16,160,19890300.0,1,5,5,155,11,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Sarah Garcia,23,93,12407700.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Sarah Gupta,3,155,19391400.0,4,4,4,444,12,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Sarah Iyer,2,102,14326500.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Sarah Johnson,5,209,26050900.0,3,5,5,355,13,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Sarah Jones,37,76,9782200.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Sarah Khan,4,72,8195300.0,4,1,1,411,6,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Sarah Martinez,32,89,10842800.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Sarah Miller,1,132,15804100.0,5,3,3,533,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Sarah Nair,3,192,23094600.0,4,5,5,455,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Sarah Patel,1,179,21348900.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Sarah Rodriguez,4,232,28109200.0,4,5,5,455,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Sarah Sharma,17,77,10137700.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Sarah Smith,11,70,8445000.0,2,1,1,211,4,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Sarah Taylor,7,143,17664900.0,3,4,4,344,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Sarah Verma,1,120,15255200.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Sarah Williams,10,154,19407500.0,2,4,4,244,10,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Sarah Wilson,1,108,13678200.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Susan Anderson,3,136,18249000.0,4,3,4,434,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Susan Brown,10,133,15669600.0,2,3,3,233,8,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Susan Davis,3,130,16491400.0,4,3,3,433,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Susan Garcia,6,134,15409800.0,3,3,3,333,9,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Susan Gupta,8,132,16319200.0,2,3,3,233,8,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Susan Iyer,2,92,11247900.0,5,1,1,511,7,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Susan Johnson,15,131,15521400.0,1,3,3,133,7,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Susan Jones,12,162,20360900.0,2,5,5,255,12,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Susan Khan,2,151,20267400.0,5,4,5,545,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Susan Martinez,4,152,19862100.0,4,4,5,445,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Susan Miller,8,107,12773000.0,2,2,2,222,6,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Susan Nair,2,184,22751300.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Susan Patel,12,144,19781100.0,2,4,4,244,10,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Susan Rodriguez,1,111,14447300.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Susan Sharma,3,114,14313400.0,4,2,2,422,8,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Susan Smith,4,175,23553700.0,4,5,5,455,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Susan Taylor,6,122,14838900.0,3,3,2,332,8,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Susan Verma,4,97,11992600.0,4,1,1,411,6,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Susan Williams,4,163,20315400.0,4,5,5,455,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Susan Wilson,6,146,16819700.0,3,4,3,343,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Thomas Anderson,15,163,21592200.0,1,5,5,155,11,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Thomas Brown,12,118,15319300.0,2,2,2,222,6,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Thomas Davis,5,191,23491100.0,3,5,5,355,13,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Thomas Garcia,6,170,21221800.0,3,5,5,355,13,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Thomas Gupta,1,154,18397200.0,5,4,4,544,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Thomas Iyer,18,158,18993000.0,1,5,4,154,10,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+Thomas Johnson,7,125,16681000.0,3,3,3,333,9,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Thomas Jones,3,157,19960100.0,4,5,5,455,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Thomas Khan,5,150,17266900.0,3,4,4,344,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Thomas Martinez,4,206,24976500.0,4,5,5,455,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+Thomas Miller,7,137,17406900.0,3,3,4,334,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Thomas Nair,7,137,17257500.0,3,3,4,334,10,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Thomas Patel,4,132,17280300.0,4,3,4,434,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Thomas Rodriguez,21,77,10179100.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Thomas Sharma,6,93,11497800.0,3,1,1,311,5,Needs Attention,Re-engagement email/SMS with a moderate discount.
+Thomas Smith,3,111,13368100.0,4,2,2,422,8,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Thomas Taylor,6,129,16102600.0,3,3,3,333,9,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+Thomas Verma,2,115,15028600.0,5,2,2,522,9,New / Promising,Onboard with a second-purchase incentive within 30 days.
+Thomas Williams,40,47,6568700.0,1,1,1,111,3,Lost / Churned,Low-cost reactivation only; do not over-invest.
+Thomas Wilson,2,122,15810300.0,5,3,3,533,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+William Anderson,9,66,8617600.0,2,1,1,211,4,Lost / Churned,Low-cost reactivation only; do not over-invest.
+William Brown,11,147,17848500.0,2,4,4,244,10,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+William Davis,9,140,18517100.0,2,4,4,244,10,At Risk (High Value),Urgent win-back campaign — high revenue customers going cold.
+William Garcia,16,126,15825100.0,1,3,3,133,7,Needs Attention,Re-engagement email/SMS with a moderate discount.
+William Gupta,6,175,20832900.0,3,5,5,355,13,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+William Iyer,2,131,17100600.0,5,3,3,533,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+William Johnson,14,108,13603700.0,1,2,2,122,5,Lost / Churned,Low-cost reactivation only; do not over-invest.
+William Jones,20,112,12731600.0,1,2,2,122,5,Lost / Churned,Low-cost reactivation only; do not over-invest.
+William Khan,12,94,11855100.0,2,1,1,211,4,Lost / Churned,Low-cost reactivation only; do not over-invest.
+William Martinez,3,161,20825800.0,4,5,5,455,14,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+William Miller,1,205,25261600.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+William Nair,3,102,12697400.0,4,2,2,422,8,New / Promising,Onboard with a second-purchase incentive within 30 days.
+William Patel,5,142,17548900.0,3,4,4,344,11,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+William Rodriguez,24,130,17071300.0,1,3,3,133,7,Needs Attention,Re-engagement email/SMS with a moderate discount.
+William Sharma,3,82,9947900.0,4,1,1,411,6,New / Promising,Onboard with a second-purchase incentive within 30 days.
+William Smith,2,181,22260900.0,5,5,5,555,15,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+William Taylor,1,143,18538900.0,5,4,4,544,13,Champions,"Reward with early access / loyalty perks. Protect, don't discount."
+William Verma,5,132,15933400.0,3,3,3,333,9,Loyal Customers,Upsell premium SKUs (e.g. higher RAM/ROM variants). Cross-sell accessories.
+William Williams,10,133,16708700.0,2,3,3,233,8,Needs Attention,Re-engagement email/SMS with a moderate discount.
+William Wilson,12,131,15921700.0,2,3,3,233,8,Needs Attention,Re-engagement email/SMS with a moderate discount.
