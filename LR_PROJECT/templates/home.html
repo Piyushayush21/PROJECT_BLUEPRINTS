@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diabetes Prediction AI</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 450px;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 25px;
+      font-size: 26px;
+      letter-spacing: 1px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    input {
+      padding: 12px 15px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    input::placeholder {
+      color: rgba(255,255,255,0.7);
+    }
+
+    input:focus {
+      background: rgba(255,255,255,0.25);
+      transform: scale(1.02);
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      font-weight: bold;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    .result {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 18px;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: rgba(255,255,255,0.7);
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>🩺 Diabetes Prediction AI</h1>
+    <p class="subtitle">Enter patient details to predict risk</p>
+
+    <form action="{{ url_for('predict_datapoint')}}" method="post">
+      <input type="text" name="Pregnancies" placeholder="Pregnancies" required />
+      <input type="text" name="Glucose" placeholder="Glucose Level" required />
+      <input type="text" name="BloodPressure" placeholder="Blood Pressure" required />
+      <input type="text" name="SkinThickness" placeholder="Skin Thickness" required />
+      <input type="text" name="Insulin" placeholder="Insulin" required />
+      <input type="text" name="BMI" placeholder="BMI" required />
+      <input type="text" name="DiabetesPedigreeFunction" placeholder="Diabetes Pedigree Function" required />
+      <input type="text" name="Age" placeholder="Age" required />
+
+      <button type="submit">Predict Now</button>
+    </form>
+
+    {% if result %}
+    <div class="result">
+      Prediction: {{ result }}
+    </div>
+    {% endif %}
+  </div>
+
+</body>
+</html>
