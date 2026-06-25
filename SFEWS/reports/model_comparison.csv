@@ -1,5 +1,0 @@
-model,roc_auc,pr_auc,f1_at_0.5,brier_score
-RandomForest,0.9601,0.7361,0.7575,0.0506
-LightGBM,0.9576,0.7165,0.7624,0.0463
-XGBoost,0.9567,0.7152,0.7598,0.047
-LogisticRegression,0.9404,0.6516,0.7316,0.0589
