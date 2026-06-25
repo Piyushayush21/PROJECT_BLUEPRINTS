@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Price Estimator — Consumer Electronics Sales Analytics</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap');
+
+  :root {
+    --bg: #faf9f6;
+    --panel: #ffffff;
+    --ink: #1a1a17;
+    --ink-soft: #5c5a52;
+    --ink-faint: #9a978c;
+    --line: #e4e1d8;
+    --accent: #d85a30;
+    --accent-soft: #faece7;
+    --accent-deep: #4a1b0c;
+    --good: #3b6d11;
+    --bad: #993c1d;
+    --mono: 'JetBrains Mono', monospace;
+    --sans: 'Inter', sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0 0 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .eyebrow .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    display: inline-block;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+    margin: 0 0 12px;
+    font-weight: 700;
+  }
+
+  .sub {
+    font-size: 16px;
+    color: var(--ink-soft);
+    max-width: 560px;
+    line-height: 1.55;
+    margin: 0 0 40px;
+  }
+
+  .sheet {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    border: 1px solid var(--line);
+    background: var(--panel);
+    border-radius: 2px;
+  }
+
+  @media (max-width: 760px) {
+    .sheet { grid-template-columns: 1fr; }
+    h1 { font-size: 30px; }
+  }
+
+  .specs {
+    padding: 36px 40px;
+    border-right: 1px solid var(--line);
+  }
+
+  @media (max-width: 760px) {
+    .specs { border-right: none; border-bottom: 1px solid var(--line); }
+  }
+
+  .field { margin-bottom: 22px; }
+  .field:last-child { margin-bottom: 0; }
+
+  .field-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .toggle-row {
+    display: flex;
+    gap: 0;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .toggle-row button {
+    flex: 1;
+    padding: 11px 0;
+    border: none;
+    background: var(--panel);
+    color: var(--ink-soft);
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    border-right: 1px solid var(--line);
+  }
+  .toggle-row button:last-child { border-right: none; }
+  .toggle-row button.active {
+    background: var(--accent);
+    color: #fff;
+  }
+  .toggle-row button:not(.active):hover { background: var(--accent-soft); }
+
+  select {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    background: var(--panel);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 14px;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235c5a52' stroke-width='1.5' fill='none' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    cursor: pointer;
+  }
+  select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+  .row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+  .readout {
+    padding: 36px 40px;
+    background: #fbfaf7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .price-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 10px;
+  }
+
+  .price-value {
+    font-family: var(--mono);
+    font-size: 46px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--accent-deep);
+    line-height: 1;
+  }
+
+  .price-error {
+    font-size: 12.5px;
+    color: var(--ink-faint);
+    margin-top: 8px;
+  }
+
+  .breakdown {
+    margin-top: 28px;
+    font-family: var(--mono);
+    font-size: 12.5px;
+  }
+
+  .breakdown-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px dashed var(--line);
+    color: var(--ink-soft);
+  }
+  .breakdown-row:last-child { border-bottom: none; }
+  .breakdown-row .pos { color: var(--good); }
+  .breakdown-row .neg { color: var(--bad); }
+  .breakdown-row .base { color: var(--ink); font-weight: 500; }
+
+  .footer-meta {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-faint);
+    letter-spacing: 0.03em;
+  }
+
+  .note {
+    margin-top: 28px;
+    font-size: 13px;
+    color: var(--ink-faint);
+    line-height: 1.6;
+    max-width: 760px;
+  }
+
+  .note strong { color: var(--ink-soft); font-weight: 600; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <p class="eyebrow"><span class="dot"></span>Consumer electronics sales analytics — price model</p>
+  <h1>Build a spec, get a price.</h1>
+  <p class="sub">A Ridge regression model trained on 51,899 real transactions estimates the
+  price for any combination of device, brand, processor, memory, and region — live, in
+  your browser, no server required.</p>
+
+  <div class="sheet">
+
+    <div class="specs">
+
+      <div class="field">
+        <span class="field-label">Device type</span>
+        <div class="toggle-row" id="type-toggle"></div>
+      </div>
+
+      <div class="field">
+        <span class="field-label">Brand</span>
+        <select id="brand"></select>
+      </div>
+
+      <div class="field">
+        <span class="field-label" id="processor-label">Processor</span>
+        <select id="processor"></select>
+      </div>
+
+      <div class="field">
+        <div class="row-2">
+          <div>
+            <span class="field-label">RAM (GB)</span>
+            <select id="ram"></select>
+          </div>
+          <div>
+            <span class="field-label">Storage (GB)</span>
+            <select id="rom"></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <span class="field-label">Region</span>
+        <select id="region"></select>
+      </div>
+
+    </div>
+
+    <div class="readout">
+      <div>
+        <div class="price-label">Estimated price</div>
+        <div class="price-value" id="price-out">—</div>
+        <div class="price-error">± ₹3,607 typical error (model MAE)</div>
+      </div>
+
+      <div class="breakdown" id="breakdown"></div>
+
+      <div class="footer-meta">
+        <span>Ridge regression</span>
+        <span>R² = 0.972</span>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="note">
+    <strong>About this estimate:</strong> trained on the project's cleaned sales dataset
+    using brand, processor/chipset, RAM, storage, and region as predictors. The model
+    coefficients are embedded directly in this page's JavaScript — open the page source to
+    see exactly how each spec choice maps to a price. Note: the underlying dataset is a
+    synthetic sample built to match the real Kaggle dataset's structure and statistics
+    (see project README) — treat the rupee values as illustrative, not authoritative.
+  </p>
+
+</div>
+
+<script>
+(function () {
+  const WEIGHTS = {"intercept": 64209.0, "ram_coef": 1452.78, "rom_coef": 34.99, "product_type": {"Laptop": -1578.77, "Mobile": 1578.77}, "brand": {"Acer": -9196.68, "Apple": 32653.64, "Asus": 3459.41, "Dell": 2546.99, "Google": 8775.85, "Hp": -5441.64, "Lenovo": -1508.19, "Msi": -5413.91, "Oneplus": -5155.1, "Oppo": -9120.1, "Samsung": 6675.55, "Vivo": -10090.49, "Xiaomi": -8185.33}, "processor": {"Apple Bionic": 11628.22, "Google Tensor": 7922.22, "Intel I3": -1967.61, "Intel I5": -1937.67, "Intel I7": -1881.06, "Intel I9": -1923.77, "Mediatek Dimensity": -10048.92, "Mediatek Helio": -10198.08, "Ryzen 3": -5019.87, "Ryzen 5": 3070.9, "Ryzen 7": 13071.94, "Samsung Exynos": -5226.59, "Snapdragon 7S": -10192.8, "Snapdragon 8 Gen": 13643.64, "Unknown": -940.55}, "region": {"East": -1830.31, "North": 29.31, "South": -336.12, "West": 2137.12}, "metrics": {"mae": 3606.77, "r2": 0.9718}, "options": {"product_type": ["Laptop", "Mobile"], "brand": ["Acer", "Apple", "Asus", "Dell", "Google", "Hp", "Lenovo", "Msi", "Oneplus", "Oppo", "Samsung", "Vivo", "Xiaomi"], "processor": ["Apple Bionic", "Google Tensor", "Intel I3", "Intel I5", "Intel I7", "Intel I9", "Mediatek Dimensity", "Mediatek Helio", "Ryzen 3", "Ryzen 5", "Ryzen 7", "Samsung Exynos", "Snapdragon 7S", "Snapdragon 8 Gen", "Unknown"], "region": ["East", "North", "South", "West"], "ram_options": [4.0, 6.0, 8.0, 12.0, 16.0, 32.0], "rom_options": [64.0, 128.0, 256.0, 512.0, 1024.0]}, "processor_by_type": {"Laptop": ["Intel I3", "Intel I5", "Intel I7", "Intel I9", "Ryzen 3", "Ryzen 5", "Ryzen 7", "Unknown"], "Mobile": ["Apple Bionic", "Google Tensor", "Mediatek Dimensity", "Mediatek Helio", "Samsung Exynos", "Snapdragon 7S", "Snapdragon 8 Gen", "Unknown"]}, "brand_by_type": {"Laptop": ["Acer", "Apple", "Asus", "Dell", "Hp", "Lenovo", "Msi"], "Mobile": ["Apple", "Google", "Oneplus", "Oppo", "Samsung", "Vivo", "Xiaomi"]}, "ram_by_type": {"Laptop": [8.0, 16.0, 32.0], "Mobile": [4.0, 6.0, 8.0, 12.0]}, "rom_by_type": {"Laptop": [256.0, 512.0, 1024.0], "Mobile": [64.0, 128.0, 256.0]}};
+
+  let state = { type: "Laptop" };
+
+  const typeToggle = document.getElementById('type-toggle');
+  const brandSel = document.getElementById('brand');
+  const procSel = document.getElementById('processor');
+  const ramSel = document.getElementById('ram');
+  const romSel = document.getElementById('rom');
+  const regionSel = document.getElementById('region');
+  const priceOut = document.getElementById('price-out');
+  const breakdown = document.getElementById('breakdown');
+  const procLabel = document.getElementById('processor-label');
+
+  function fmtINR(n) {
+    return '₹' + Math.round(n).toLocaleString('en-IN');
+  }
+
+  function makeToggleButtons() {
+    typeToggle.innerHTML = '';
+    ['Laptop', 'Mobile'].forEach(t => {
+      const btn = document.createElement('button');
+      btn.textContent = t;
+      btn.className = state.type === t ? 'active' : '';
+      btn.onclick = () => { state.type = t; onTypeChange(); };
+      typeToggle.appendChild(btn);
+    });
+  }
+
+  function fillSelect(sel, options, labelFn) {
+    sel.innerHTML = '';
+    options.forEach(opt => {
+      const o = document.createElement('option');
+      o.value = opt;
+      o.textContent = labelFn ? labelFn(opt) : opt;
+      sel.appendChild(o);
+    });
+  }
+
+  function onTypeChange() {
+    makeToggleButtons();
+    procLabel.textContent = state.type === 'Laptop' ? 'Processor' : 'Chipset';
+    fillSelect(brandSel, WEIGHTS.brand_by_type[state.type]);
+    fillSelect(procSel, WEIGHTS.processor_by_type[state.type]);
+    fillSelect(ramSel, WEIGHTS.ram_by_type[state.type], v => v + ' GB');
+    fillSelect(romSel, WEIGHTS.rom_by_type[state.type], v => v + ' GB');
+    recompute();
+  }
+
+  function recompute() {
+    const brand = brandSel.value;
+    const proc = procSel.value;
+    const ram = parseFloat(ramSel.value);
+    const rom = parseFloat(romSel.value);
+    const region = regionSel.value;
+
+    const typeOffset = WEIGHTS.product_type[state.type] || 0;
+    const brandOffset = WEIGHTS.brand[brand] || 0;
+    const procOffset = WEIGHTS.processor[proc] || 0;
+    const regionOffset = WEIGHTS.region[region] || 0;
+    const ramAmt = WEIGHTS.ram_coef * ram;
+    const romAmt = WEIGHTS.rom_coef * rom;
+
+    const total = WEIGHTS.intercept + typeOffset + brandOffset + procOffset + regionOffset + ramAmt + romAmt;
+
+    priceOut.textContent = fmtINR(total);
+
+    const rows = [
+      ['Base', WEIGHTS.intercept, 'base'],
+      ['Brand — ' + brand, brandOffset],
+      [(state.type === 'Laptop' ? 'Processor — ' : 'Chipset — ') + proc, procOffset],
+      ['RAM — ' + ram + ' GB', ramAmt],
+      ['Storage — ' + rom + ' GB', romAmt],
+      ['Region — ' + region, regionOffset],
+    ];
+
+    breakdown.innerHTML = rows.map(([label, val, kind]) => {
+      if (kind === 'base') {
+        return '<div class="breakdown-row"><span>' + label + '</span><span class="base">' + fmtINR(val) + '</span></div>';
+      }
+      const sign = val >= 0 ? '+' : '−';
+      const cls = val >= 0 ? 'pos' : 'neg';
+      return '<div class="breakdown-row"><span>' + label + '</span><span class="' + cls + '">' + sign + ' ' + fmtINR(Math.abs(val)) + '</span></div>';
+    }).join('');
+  }
+
+  fillSelect(regionSel, WEIGHTS.options.region);
+  [brandSel, procSel, ramSel, romSel, regionSel].forEach(el => el.addEventListener('change', recompute));
+  makeToggleButtons();
+  onTypeChange();
+})();
+</script>
+
+</body>
+</html>
