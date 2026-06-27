@@ -1,0 +1,211 @@
+Year,Education_Level,Region,Gender,Unemployment_Rate_Percent
+2017-18,Diploma / Certificate,Rural,Female,15.4
+2017-18,Diploma / Certificate,Rural,Male,12.2
+2017-18,Diploma / Certificate,Total,Person,17.0
+2017-18,Diploma / Certificate,Urban,Female,22.8
+2017-18,Diploma / Certificate,Urban,Male,17.4
+2017-18,Graduate & Above,Rural,Female,17.6
+2017-18,Graduate & Above,Rural,Male,14.7
+2017-18,Graduate & Above,Total,Person,19.8
+2017-18,Graduate & Above,Urban,Female,26.0
+2017-18,Graduate & Above,Urban,Male,20.7
+2017-18,Higher Secondary,Rural,Female,11.2
+2017-18,Higher Secondary,Rural,Male,8.7
+2017-18,Higher Secondary,Total,Person,12.6
+2017-18,Higher Secondary,Urban,Female,17.0
+2017-18,Higher Secondary,Urban,Male,13.4
+2017-18,Not Literate,Rural,Female,1.3
+2017-18,Not Literate,Rural,Male,0.9
+2017-18,Not Literate,Total,Person,1.4
+2017-18,Not Literate,Urban,Female,1.8
+2017-18,Not Literate,Urban,Male,1.4
+2017-18,Secondary,Rural,Female,6.6
+2017-18,Secondary,Rural,Male,5.1
+2017-18,Secondary,Total,Person,7.3
+2017-18,Secondary,Urban,Female,9.9
+2017-18,Secondary,Urban,Male,7.5
+2017-18,Up to Primary,Rural,Female,2.0
+2017-18,Up to Primary,Rural,Male,1.7
+2017-18,Up to Primary,Total,Person,2.3
+2017-18,Up to Primary,Urban,Female,3.0
+2017-18,Up to Primary,Urban,Male,2.4
+2018-19,Diploma / Certificate,Rural,Female,12.7
+2018-19,Diploma / Certificate,Rural,Male,10.6
+2018-19,Diploma / Certificate,Total,Person,14.6
+2018-19,Diploma / Certificate,Urban,Female,19.4
+2018-19,Diploma / Certificate,Urban,Male,15.7
+2018-19,Graduate & Above,Rural,Female,15.3
+2018-19,Graduate & Above,Rural,Male,12.3
+2018-19,Graduate & Above,Total,Person,17.5
+2018-19,Graduate & Above,Urban,Female,23.6
+2018-19,Graduate & Above,Urban,Male,18.6
+2018-19,Higher Secondary,Rural,Female,10.0
+2018-19,Higher Secondary,Rural,Male,8.1
+2018-19,Higher Secondary,Total,Person,11.0
+2018-19,Higher Secondary,Urban,Female,15.0
+2018-19,Higher Secondary,Urban,Male,11.0
+2018-19,Not Literate,Rural,Female,1.0
+2018-19,Not Literate,Rural,Male,0.7
+2018-19,Not Literate,Total,Person,1.1
+2018-19,Not Literate,Urban,Female,1.5
+2018-19,Not Literate,Urban,Male,1.1
+2018-19,Secondary,Rural,Female,5.8
+2018-19,Secondary,Rural,Male,4.5
+2018-19,Secondary,Total,Person,6.4
+2018-19,Secondary,Urban,Female,8.5
+2018-19,Secondary,Urban,Male,7.0
+2018-19,Up to Primary,Rural,Female,1.9
+2018-19,Up to Primary,Rural,Male,1.3
+2018-19,Up to Primary,Total,Person,2.0
+2018-19,Up to Primary,Urban,Female,2.7
+2018-19,Up to Primary,Urban,Male,2.2
+2019-20,Diploma / Certificate,Rural,Female,12.2
+2019-20,Diploma / Certificate,Rural,Male,9.4
+2019-20,Diploma / Certificate,Total,Person,12.8
+2019-20,Diploma / Certificate,Urban,Female,16.6
+2019-20,Diploma / Certificate,Urban,Male,13.2
+2019-20,Graduate & Above,Rural,Female,14.2
+2019-20,Graduate & Above,Rural,Male,10.8
+2019-20,Graduate & Above,Total,Person,15.8
+2019-20,Graduate & Above,Urban,Female,20.8
+2019-20,Graduate & Above,Urban,Male,17.3
+2019-20,Higher Secondary,Rural,Female,8.9
+2019-20,Higher Secondary,Rural,Male,7.1
+2019-20,Higher Secondary,Total,Person,9.8
+2019-20,Higher Secondary,Urban,Female,13.0
+2019-20,Higher Secondary,Urban,Male,10.4
+2019-20,Not Literate,Rural,Female,0.8
+2019-20,Not Literate,Rural,Male,0.6
+2019-20,Not Literate,Total,Person,0.9
+2019-20,Not Literate,Urban,Female,1.3
+2019-20,Not Literate,Urban,Male,0.9
+2019-20,Secondary,Rural,Female,5.2
+2019-20,Secondary,Rural,Male,3.9
+2019-20,Secondary,Total,Person,5.6
+2019-20,Secondary,Urban,Female,7.8
+2019-20,Secondary,Urban,Male,5.7
+2019-20,Up to Primary,Rural,Female,1.5
+2019-20,Up to Primary,Rural,Male,1.2
+2019-20,Up to Primary,Total,Person,1.7
+2019-20,Up to Primary,Urban,Female,2.3
+2019-20,Up to Primary,Urban,Male,1.8
+2020-21,Diploma / Certificate,Rural,Female,14.3
+2020-21,Diploma / Certificate,Rural,Male,10.9
+2020-21,Diploma / Certificate,Total,Person,16.1
+2020-21,Diploma / Certificate,Urban,Female,22.0
+2020-21,Diploma / Certificate,Urban,Male,17.1
+2020-21,Graduate & Above,Rural,Female,18.1
+2020-21,Graduate & Above,Rural,Male,13.6
+2020-21,Graduate & Above,Total,Person,19.8
+2020-21,Graduate & Above,Urban,Female,25.9
+2020-21,Graduate & Above,Urban,Male,21.8
+2020-21,Higher Secondary,Rural,Female,10.6
+2020-21,Higher Secondary,Rural,Male,8.4
+2020-21,Higher Secondary,Total,Person,11.5
+2020-21,Higher Secondary,Urban,Female,15.2
+2020-21,Higher Secondary,Urban,Male,11.7
+2020-21,Not Literate,Rural,Female,0.9
+2020-21,Not Literate,Rural,Male,0.7
+2020-21,Not Literate,Total,Person,1.0
+2020-21,Not Literate,Urban,Female,1.3
+2020-21,Not Literate,Urban,Male,1.0
+2020-21,Secondary,Rural,Female,6.5
+2020-21,Secondary,Rural,Male,4.6
+2020-21,Secondary,Total,Person,6.8
+2020-21,Secondary,Urban,Female,8.8
+2020-21,Secondary,Urban,Male,7.3
+2020-21,Up to Primary,Rural,Female,1.8
+2020-21,Up to Primary,Rural,Male,1.4
+2020-21,Up to Primary,Total,Person,2.0
+2020-21,Up to Primary,Urban,Female,2.8
+2020-21,Up to Primary,Urban,Male,2.0
+2021-22,Diploma / Certificate,Rural,Female,11.4
+2021-22,Diploma / Certificate,Rural,Male,8.4
+2021-22,Diploma / Certificate,Total,Person,12.2
+2021-22,Diploma / Certificate,Urban,Female,16.3
+2021-22,Diploma / Certificate,Urban,Male,12.9
+2021-22,Graduate & Above,Rural,Female,14.9
+2021-22,Graduate & Above,Rural,Male,11.5
+2021-22,Graduate & Above,Total,Person,16.1
+2021-22,Graduate & Above,Urban,Female,21.9
+2021-22,Graduate & Above,Urban,Male,16.2
+2021-22,Higher Secondary,Rural,Female,8.5
+2021-22,Higher Secondary,Rural,Male,6.2
+2021-22,Higher Secondary,Total,Person,9.1
+2021-22,Higher Secondary,Urban,Female,12.3
+2021-22,Higher Secondary,Urban,Male,9.4
+2021-22,Not Literate,Rural,Female,0.7
+2021-22,Not Literate,Rural,Male,0.5
+2021-22,Not Literate,Total,Person,0.7
+2021-22,Not Literate,Urban,Female,0.9
+2021-22,Not Literate,Urban,Male,0.7
+2021-22,Secondary,Rural,Female,4.9
+2021-22,Secondary,Rural,Male,3.5
+2021-22,Secondary,Total,Person,5.2
+2021-22,Secondary,Urban,Female,7.1
+2021-22,Secondary,Urban,Male,5.5
+2021-22,Up to Primary,Rural,Female,1.4
+2021-22,Up to Primary,Rural,Male,1.1
+2021-22,Up to Primary,Total,Person,1.6
+2021-22,Up to Primary,Urban,Female,2.1
+2021-22,Up to Primary,Urban,Male,1.6
+2022-23,Diploma / Certificate,Rural,Female,9.1
+2022-23,Diploma / Certificate,Rural,Male,7.0
+2022-23,Diploma / Certificate,Total,Person,10.2
+2022-23,Diploma / Certificate,Urban,Female,13.4
+2022-23,Diploma / Certificate,Urban,Male,11.1
+2022-23,Graduate & Above,Rural,Female,12.2
+2022-23,Graduate & Above,Rural,Male,9.3
+2022-23,Graduate & Above,Total,Person,13.3
+2022-23,Graduate & Above,Urban,Female,17.8
+2022-23,Graduate & Above,Urban,Male,14.0
+2022-23,Higher Secondary,Rural,Female,6.6
+2022-23,Higher Secondary,Rural,Male,5.5
+2022-23,Higher Secondary,Total,Person,7.5
+2022-23,Higher Secondary,Urban,Female,10.2
+2022-23,Higher Secondary,Urban,Male,7.7
+2022-23,Not Literate,Rural,Female,0.4
+2022-23,Not Literate,Rural,Male,0.4
+2022-23,Not Literate,Total,Person,0.5
+2022-23,Not Literate,Urban,Female,0.7
+2022-23,Not Literate,Urban,Male,0.5
+2022-23,Secondary,Rural,Female,3.6
+2022-23,Secondary,Rural,Male,3.0
+2022-23,Secondary,Total,Person,4.0
+2022-23,Secondary,Urban,Female,5.3
+2022-23,Secondary,Urban,Male,4.2
+2022-23,Up to Primary,Rural,Female,1.0
+2022-23,Up to Primary,Rural,Male,0.8
+2022-23,Up to Primary,Total,Person,1.2
+2022-23,Up to Primary,Urban,Female,1.6
+2022-23,Up to Primary,Urban,Male,1.3
+2023-24,Diploma / Certificate,Rural,Female,7.6
+2023-24,Diploma / Certificate,Rural,Male,5.9
+2023-24,Diploma / Certificate,Total,Person,8.4
+2023-24,Diploma / Certificate,Urban,Female,11.5
+2023-24,Diploma / Certificate,Urban,Male,8.5
+2023-24,Graduate & Above,Rural,Female,10.3
+2023-24,Graduate & Above,Rural,Male,7.4
+2023-24,Graduate & Above,Total,Person,10.8
+2023-24,Graduate & Above,Urban,Female,14.2
+2023-24,Graduate & Above,Urban,Male,11.2
+2023-24,Higher Secondary,Rural,Female,5.1
+2023-24,Higher Secondary,Rural,Male,4.1
+2023-24,Higher Secondary,Total,Person,5.7
+2023-24,Higher Secondary,Urban,Female,7.6
+2023-24,Higher Secondary,Urban,Male,6.0
+2023-24,Not Literate,Rural,Female,0.3
+2023-24,Not Literate,Rural,Male,0.2
+2023-24,Not Literate,Total,Person,0.3
+2023-24,Not Literate,Urban,Female,0.4
+2023-24,Not Literate,Urban,Male,0.3
+2023-24,Secondary,Rural,Female,2.9
+2023-24,Secondary,Rural,Male,2.3
+2023-24,Secondary,Total,Person,3.2
+2023-24,Secondary,Urban,Female,4.1
+2023-24,Secondary,Urban,Male,3.3
+2023-24,Up to Primary,Rural,Female,0.8
+2023-24,Up to Primary,Rural,Male,0.7
+2023-24,Up to Primary,Total,Person,0.9
+2023-24,Up to Primary,Urban,Female,1.3
+2023-24,Up to Primary,Urban,Male,0.9

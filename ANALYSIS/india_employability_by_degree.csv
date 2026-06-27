@@ -1,0 +1,22 @@
+Year,Degree,Employability_Percent,Data_Type,Estimated_Skill_Gap_Percent
+2024,Engineering,64.0,Reported,36.0
+2024,B.Com,48.0,Reported,52.0
+2024,B.Sc,54.0,Estimated,46.0
+2024,B.A,50.0,Estimated,50.0
+2024,MBA / Management,75.0,Estimated,25.0
+2024,MCA,68.0,Estimated,32.0
+2024,BCA,55.0,Estimated,45.0
+2025,Engineering,71.5,Reported,28.5
+2025,B.Com,55.0,Reported,45.0
+2025,B.Sc,58.0,Reported,42.0
+2025,B.A,54.0,Reported,46.0
+2025,MBA / Management,78.0,Reported,22.0
+2025,MCA,71.0,Reported,29.0
+2025,BCA,62.0,Estimated,38.0
+2026,Engineering,80.0,Reported,20.0
+2026,B.Com,62.81,Reported,37.19
+2026,B.Sc,61.0,Reported,39.0
+2026,B.A,55.55,Reported,44.45
+2026,MBA / Management,72.76,Reported,27.24
+2026,MCA,73.0,Estimated,27.0
+2026,BCA,66.0,Estimated,34.0
