@@ -3,394 +3,291 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Glucose Panel — Diabetes Risk Screening</title>
+<title>The Whitfield Clinic — Diabetes Risk Assessment</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 :root{
-    --paper:#eef1ec;
-    --panel:#ffffff;
-    --ink:#1c2b25;
-    --ink-soft:#5b6b62;
-    --line:#c7d0c8;
-    --clinical-teal:#0f5c52;
-    --clinical-teal-deep:#0a423b;
-    --flag-amber:#b5730a;
-    --flag-red:#a3352c;
-    --flag-green:#1f7a52;
+    --cream:#f7f3ea;
+    --panel:#fffdf8;
+    --ink:#2b2620;
+    --ink-soft:#7a7264;
+    --gold:#a9812f;
+    --gold-deep:#8a6a24;
+    --line:#ddd3bd;
+    --hunter:#3c4b3a;
 }
 
 *{margin:0;padding:0;box-sizing:border-box;}
 
 body{
-    font-family:'IBM Plex Mono',monospace;
-    background:var(--paper);
-    background-image:
-        repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(15,92,82,0.045) 40px);
+    font-family:'Jost',sans-serif;
+    background:var(--cream);
     color:var(--ink);
     min-height:100vh;
     display:flex;
     justify-content:center;
-    padding:48px 20px;
+    padding:56px 20px;
 }
 
-.sheet{
+.card{
     width:100%;
-    max-width:840px;
+    max-width:720px;
+    background:var(--panel);
+    border:1px solid var(--line);
+    box-shadow:0 30px 60px -20px rgba(43,38,32,0.18);
+    position:relative;
 }
 
-.letterhead{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-end;
-    border-bottom:3px solid var(--ink);
-    padding-bottom:14px;
-    margin-bottom:6px;
-}
-
-.brand{
-    display:flex;
-    align-items:center;
-    gap:14px;
-}
-
-.brand-mark{
-    width:44px;
-    height:44px;
-    border:2px solid var(--ink);
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-family:'Source Serif 4',serif;
-    font-weight:700;
-    font-size:20px;
-    flex-shrink:0;
-}
-
-.brand-text h1{
-    font-family:'Source Serif 4',serif;
-    font-weight:700;
-    font-size:1.5rem;
-    letter-spacing:0.01em;
-}
-
-.brand-text p{
-    font-size:11px;
-    text-transform:uppercase;
-    letter-spacing:0.12em;
-    color:var(--ink-soft);
-    margin-top:2px;
-}
-
-.report-meta{
-    text-align:right;
-    font-size:11px;
-    color:var(--ink-soft);
-    line-height:1.6;
-}
-
-.report-meta strong{
-    color:var(--ink);
-    font-weight:600;
-}
-
-.subline{
-    display:flex;
-    justify-content:space-between;
-    font-size:11px;
-    color:var(--ink-soft);
-    text-transform:uppercase;
-    letter-spacing:0.1em;
-    padding:10px 0 28px;
-    border-bottom:1px solid var(--line);
-    margin-bottom:30px;
-}
-
-.section-label{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    font-size:11px;
-    text-transform:uppercase;
-    letter-spacing:0.14em;
-    color:var(--clinical-teal-deep);
-    font-weight:600;
-    margin-bottom:16px;
-}
-
-.section-label::after{
+.card::before{
     content:"";
-    flex:1;
+    position:absolute;
+    inset:14px;
+    border:1px solid var(--gold);
+    opacity:.5;
+    pointer-events:none;
+}
+
+.inner{
+    padding:56px 56px 46px;
+}
+
+.crest{
+    text-align:center;
+    margin-bottom:18px;
+}
+
+.crest svg{
+    width:46px;
+    height:46px;
+}
+
+.eyebrow{
+    text-align:center;
+    font-size:11px;
+    letter-spacing:0.32em;
+    text-transform:uppercase;
+    color:var(--gold-deep);
+    margin-bottom:10px;
+}
+
+h1{
+    text-align:center;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:600;
+    font-size:2.6rem;
+    letter-spacing:0.01em;
+    line-height:1.15;
+}
+
+.subtitle{
+    text-align:center;
+    font-family:'Cormorant Garamond',serif;
+    font-style:italic;
+    font-size:1.05rem;
+    color:var(--ink-soft);
+    margin-top:8px;
+    margin-bottom:8px;
+}
+
+.rule{
+    width:64px;
     height:1px;
-    background:var(--line);
+    background:var(--gold);
+    margin:26px auto 34px;
 }
 
 form{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:0;
-    border:1px solid var(--line);
-    background:var(--panel);
+    column-gap:28px;
+    row-gap:22px;
 }
 
-.field{
-    display:grid;
-    grid-template-columns:1fr 130px 70px;
-    align-items:center;
-    padding:14px 18px;
-    border-bottom:1px solid var(--line);
-    gap:12px;
-}
-
-.field:nth-child(odd){
-    border-right:1px solid var(--line);
-}
-
-.field label{
-    font-size:13px;
-    color:var(--ink);
-}
-
-.field .range{
-    font-size:10px;
-    color:var(--ink-soft);
-    text-align:right;
-    white-space:nowrap;
-}
-
-.field input{
-    font-family:'IBM Plex Mono',monospace;
-    font-size:14px;
-    font-weight:600;
-    color:var(--ink);
-    background:transparent;
-    border:none;
-    border-bottom:1.5px solid var(--ink);
-    padding:4px 2px;
-    outline:none;
-    text-align:right;
-    width:100%;
-}
-
-.field input::placeholder{
-    color:#b7c0ba;
-    font-weight:400;
-}
-
-.field input:focus{
-    border-bottom-color:var(--clinical-teal);
-    background:rgba(15,92,82,0.05);
-}
-
-.actions{
-    grid-column:span 2;
+.input-group{
     display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:22px 18px;
-    background:var(--ink);
+    flex-direction:column;
+    position:relative;
 }
 
-.actions .note{
-    font-size:10px;
-    color:#b9c4bd;
-    letter-spacing:0.04em;
-    max-width:340px;
-    line-height:1.5;
+label{
+    font-size:11px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin-bottom:8px;
+}
+
+input{
+    width:100%;
+    padding:8px 2px 10px;
+    border:none;
+    border-bottom:1px solid var(--line);
+    background:transparent;
+    font-family:'Cormorant Garamond',serif;
+    font-size:1.2rem;
+    color:var(--ink);
+    outline:none;
+    transition:border-color .35s ease;
+}
+
+input::placeholder{
+    color:#c9bfa8;
+    font-style:italic;
+}
+
+input:focus{
+    border-bottom:1px solid var(--gold);
 }
 
 .predict-btn{
-    font-family:'IBM Plex Mono',monospace;
-    padding:14px 28px;
-    border:1.5px solid var(--paper);
-    background:transparent;
-    color:var(--paper);
+    grid-column:span 2;
+    margin-top:16px;
+    padding:16px;
+    border:1px solid var(--ink);
+    background:var(--ink);
+    color:var(--cream);
+    font-family:'Jost',sans-serif;
     font-size:12px;
-    font-weight:600;
-    letter-spacing:0.1em;
+    letter-spacing:0.22em;
     text-transform:uppercase;
     cursor:pointer;
-    transition:.2s ease;
-    white-space:nowrap;
+    transition:all .35s ease;
 }
 
 .predict-btn:hover{
-    background:var(--paper);
+    background:transparent;
     color:var(--ink);
 }
 
 .result{
-    margin-top:24px;
-    border:1.5px solid var(--ink);
-    background:var(--panel);
-    padding:22px 24px;
-    display:flex;
-    align-items:center;
-    gap:18px;
+    margin-top:32px;
+    padding:26px;
+    text-align:center;
+    border:1px solid var(--gold);
+    position:relative;
 }
 
-.result .stamp{
-    font-family:'Source Serif 4',serif;
-    font-weight:700;
-    font-size:12px;
-    text-transform:uppercase;
-    letter-spacing:0.08em;
-    padding:8px 14px;
-    border:2px solid var(--flag-green);
-    color:var(--flag-green);
-    transform:rotate(-2deg);
-    flex-shrink:0;
-}
-
-.result .result-text{
-    font-size:14px;
-}
-
-.result .result-text .label{
+.result .result-label{
     display:block;
     font-size:10px;
+    letter-spacing:0.24em;
     text-transform:uppercase;
-    letter-spacing:0.12em;
-    color:var(--ink-soft);
-    margin-bottom:4px;
+    color:var(--gold-deep);
+    margin-bottom:10px;
+}
+
+.result .result-value{
+    font-family:'Cormorant Garamond',serif;
+    font-size:1.7rem;
+    font-weight:600;
+    color:var(--hunter);
 }
 
 .footer-text{
-    display:flex;
-    justify-content:space-between;
-    margin-top:34px;
-    padding-top:14px;
-    border-top:1px solid var(--line);
-    font-size:10px;
+    text-align:center;
     color:var(--ink-soft);
-    letter-spacing:0.06em;
+    font-size:10px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    margin-top:40px;
 }
 
-@media(max-width:700px){
+.footer-text span{
+    display:block;
+    margin-top:4px;
+    font-size:9px;
+    letter-spacing:0.08em;
+    color:#a89f8c;
+}
+
+@media(max-width:640px){
+    .inner{padding:42px 26px 36px;}
     form{grid-template-columns:1fr;}
-    .field{grid-template-columns:1fr 90px;}
-    .field .range{display:none;}
-    .field:nth-child(odd){border-right:none;}
-    .actions{grid-column:span 1;flex-direction:column;gap:14px;align-items:stretch;}
-    .actions .note{max-width:none;}
-    .letterhead{flex-direction:column;align-items:flex-start;gap:10px;}
-    .report-meta{text-align:left;}
+    .predict-btn{grid-column:span 1;}
+    h1{font-size:2.1rem;}
 }
 </style>
 </head>
 
 <body>
 
-<div class="sheet">
+<div class="card">
+    <div class="inner">
 
-    <div class="letterhead">
-        <div class="brand">
-            <div class="brand-mark">Gx</div>
-            <div class="brand-text">
-                <h1>Glucose Panel</h1>
-                <p>Diabetes Risk Screening</p>
+        <div class="crest">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" stroke="#a9812f" stroke-width="1"/>
+                <path d="M24 12 L24 36 M14 20 Q24 14 34 20 M14 28 Q24 34 34 28" stroke="#a9812f" stroke-width="1" fill="none"/>
+            </svg>
+        </div>
+
+        <div class="eyebrow">The Whitfield Clinic</div>
+        <h1>Diabetes Risk Assessment</h1>
+        <p class="subtitle">A private screening, attentively considered</p>
+
+        <div class="rule"></div>
+
+        <form action="{{ url_for('predict_datapoint') }}" method="post">
+
+            <div class="input-group">
+                <label>Pregnancies</label>
+                <input type="number" name="Pregnancies" placeholder="—" required>
             </div>
+
+            <div class="input-group">
+                <label>Glucose Level</label>
+                <input type="number" name="Glucose" placeholder="—" required>
+            </div>
+
+            <div class="input-group">
+                <label>Blood Pressure</label>
+                <input type="number" name="BloodPressure" placeholder="—" required>
+            </div>
+
+            <div class="input-group">
+                <label>Skin Thickness</label>
+                <input type="number" name="SkinThickness" placeholder="—" required>
+            </div>
+
+            <div class="input-group">
+                <label>Insulin</label>
+                <input type="number" name="Insulin" placeholder="—" required>
+            </div>
+
+            <div class="input-group">
+                <label>Body Mass Index</label>
+                <input type="number" step="0.01" name="BMI" placeholder="—" required>
+            </div>
+
+            <div class="input-group">
+                <label>Pedigree Function</label>
+                <input type="number" step="0.01" name="DiabetesPedigreeFunction" placeholder="—" required>
+            </div>
+
+            <div class="input-group">
+                <label>Age</label>
+                <input type="number" name="Age" placeholder="—" required>
+            </div>
+
+            <button class="predict-btn" type="submit">Request Assessment</button>
+
+        </form>
+
+        {% if result %}
+        <div class="result">
+            <span class="result-label">Assessment Outcome</span>
+            <div class="result-value">{{ result }}</div>
         </div>
-        <div class="report-meta">
-            <div>Model: <strong>Logistic Classifier v1</strong></div>
-            <div>Dataset ref: <strong>PIMA-768</strong></div>
+        {% endif %}
+
+        <div class="footer-text">
+            Powered by Flask &amp; Machine Learning
+            <span>This is a screening estimate, not a clinical diagnosis</span>
         </div>
+
     </div>
-
-    <div class="subline">
-        <span>Patient-entered values</span>
-        <span>Screening tool — not a diagnosis</span>
-    </div>
-
-    <form action="{{ url_for('predict_datapoint') }}" method="post">
-
-        <div class="section-label">01 — Pregnancy &amp; Vitals</div>
-        <div style="grid-column:span 2;display:contents">
-
-        <div class="field">
-            <label>Pregnancies</label>
-            <span class="range">count</span>
-            <input type="number" name="Pregnancies" placeholder="0" required>
-        </div>
-
-        <div class="field">
-            <label>Blood Pressure</label>
-            <span class="range">mm Hg</span>
-            <input type="number" name="BloodPressure" placeholder="0" required>
-        </div>
-
-        </div>
-
-        <div class="section-label" style="grid-column:span 2;">02 — Blood Chemistry</div>
-        <div style="grid-column:span 2;display:contents">
-
-        <div class="field">
-            <label>Glucose Level</label>
-            <span class="range">mg/dL</span>
-            <input type="number" name="Glucose" placeholder="0" required>
-        </div>
-
-        <div class="field">
-            <label>Insulin</label>
-            <span class="range">μU/mL</span>
-            <input type="number" name="Insulin" placeholder="0" required>
-        </div>
-
-        </div>
-
-        <div class="section-label" style="grid-column:span 2;">03 — Body &amp; History</div>
-        <div style="grid-column:span 2;display:contents">
-
-        <div class="field">
-            <label>Skin Thickness</label>
-            <span class="range">mm</span>
-            <input type="number" name="SkinThickness" placeholder="0" required>
-        </div>
-
-        <div class="field">
-            <label>BMI</label>
-            <span class="range">kg/m²</span>
-            <input type="number" step="0.01" name="BMI" placeholder="0.0" required>
-        </div>
-
-        <div class="field">
-            <label>Pedigree Function</label>
-            <span class="range">index</span>
-            <input type="number" step="0.01" name="DiabetesPedigreeFunction" placeholder="0.00" required>
-        </div>
-
-        <div class="field">
-            <label>Age</label>
-            <span class="range">years</span>
-            <input type="number" name="Age" placeholder="0" required>
-        </div>
-
-        </div>
-
-        <div class="actions">
-            <span class="note">Values are used only to generate this screening estimate and are not stored or shared.</span>
-            <button class="predict-btn" type="submit">Run Screening</button>
-        </div>
-
-    </form>
-
-    {% if result %}
-    <div class="result">
-        <div class="stamp">Reviewed</div>
-        <div class="result-text">
-            <span class="label">Prediction Result</span>
-            {{ result }}
-        </div>
-    </div>
-    {% endif %}
-
-    <div class="footer-text">
-        <span>Powered by Flask &amp; Machine Learning</span>
-        <span>For screening purposes only</span>
-    </div>
-
 </div>
 
 </body>
